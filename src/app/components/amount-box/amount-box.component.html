@@ -1,1 +1,13 @@
-<p>amount-box works!</p>
+<div class="amount-box-container shadow-box">
+    <div class="amount-title">
+        <app-money-icon/>
+        <p>Saldo diponivel</p>
+    </div>
+    
+    <div class="amount-card-middle">
+        <p id="amount-value">R$ {{accountDetails.amountValue}}</p>
+        <div id="divider">
+            <p id="amount-total">Saldo + limite: {{accountDetails.totalAmount}}</p>
+        </div>
+    </div>
+</div>
